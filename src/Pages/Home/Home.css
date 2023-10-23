@@ -83,5 +83,11 @@
     .home-buttons .btn-hire{
         margin-left:-18px;
     }
+    .home-buttons .btn-cv{
+        margin-top: 8px;
+    background-color: #f29f67;
+    color: white;
+    margin-left: -17px;
+    }
   
 }
