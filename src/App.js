@@ -3,38 +3,34 @@ import Layout from "./Components/Layout/Layout";
 import About from "./Pages/About/About";
 import Techstack from "./Pages/Techstack/Techstack";
 import Projects from "./Pages/Projects/Projects";
-import Education from "./Pages/Education/Education";
 import Workexperience from "./Pages/Workexp/Workexp";
 import Contact from "./Pages/Contact/Contact";
 import ScrollToTop from "react-scroll-to-top";
-import Tada from "react-reveal/Tada";
-import { useTheme } from "./Context/ThemeContext";
 import MobileNav from "./Components/MobileNav/MobileNav";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const [theme] = useTheme();
+
   return (
     <>
-      <div id={theme}>
+      <div>
         <ToastContainer />
         <MobileNav />
         <Layout />
         <div className="container" style={{ overflow: "hidden" }}>
           <About />
-          <Education />
           <Techstack />
           <Projects />
           <Workexperience />
           <Contact />
         </div>
         <div className="footer pb-3 ms-3">
-          <Tada>
-            <h4 className="text-center">
-              Made With 🙂 SundarStack &copy; 2023
-            </h4>
-          </Tada>
+         
+            <h5 className="text-center" style={{marginTop:"35px"}}>
+               &copy; 2023, Personal.All Rights Reserved By: <span style={{color:"rgb(62 177 197)"}}>SundarStack.</span>
+            </h5>
+        
         </div>
       </div>
       <ScrollToTop

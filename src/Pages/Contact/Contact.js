@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "./Contact.css";
 import { BsLinkedin, BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
-import Rotate from "react-reveal/Rotate";
-import LightSpeed from "react-reveal/LightSpeed";
 import { toast } from "react-toastify";
 import axios from "axios";
 
@@ -20,7 +18,10 @@ const Contact = () => {
       if (!fname || !email || !message) {
         toast.error("Please Provide All Fields");
       } else {
+
+        //THis is my url for hosted server in render : https://portfolio-backend-ysm4.onrender.com
         const res = await axios.post(
+
           "https://portfolio-backend-ysm4.onrender.com/api/SendEmail",
           {
             fname,
@@ -48,41 +49,35 @@ const Contact = () => {
     <>
       <div className="contact" id="contact">
         <div className="card card0 border-0">
+        <h5>Contact Me</h5>
+        <h3>LET'S GET IN TOUCH</h3>
           <div className="row">
             <div className="col-md-6 col-lg-6 col-xk-6 col-sm-12">
               <div className="card1">
                 <div className="row border-line">
-                  <LightSpeed>
+               
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSocrCHQ3IPvFcZCuKSDXOYceFldC5FFG8qIQ&usqp=CAU"
                       alt="contact"
                     />
-                  </LightSpeed>
+             
                 </div>
               </div>
             </div>
-            <Rotate>
+     
               <div className="col-md-6 col-lg-6">
-                <div className="row">
+                <div className="row" style={{marginTop: "29px"}}>
                   <div className="card2 d-flex card border-0 px-4 py-3">
-                    <h6>
-                      {" "}
-                      Contact With
-                      <BsLinkedin color="blue" size={30} className="ms-2" />
-                      <BsGithub color="black" size={30} className="ms-2" />
-                      <BsFacebook color="blue" size={30} className="ms-2" />
-                    </h6>
+                  
                   </div>
                   <div className="row px-3 mb-4">
-                    <div className="line" />
-                    <small className="or text-center">or</small>
-                    <div className="line" />
+                 
 
                     <div className="row px-3">
                       <input
                         type="text"
                         className="mb-3"
-                        placeholder="Enter Your Name"
+                        placeholder="Name"
                         name="name"
                         onChange={(e) => setName(e.target.value)}
                       />
@@ -92,7 +87,7 @@ const Contact = () => {
                       <input
                         type="email"
                         className="mb-3"
-                        placeholder="Enter Your Email"
+                        placeholder="Email"
                         name="Email"
                         onChange={(e) => setEmail(e.target.value)}
                       />
@@ -101,7 +96,7 @@ const Contact = () => {
                       <textarea
                         type="text"
                         className="mb-3"
-                        placeholder="Enter Your Message"
+                        placeholder="Message..."
                         name="msg"
                         onChange={(e) => setMessage(e.target.value)}
                       />
@@ -114,7 +109,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            </Rotate>
+       
           </div>
         </div>
       </div>

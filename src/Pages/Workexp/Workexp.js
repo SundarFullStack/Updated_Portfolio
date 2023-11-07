@@ -11,9 +11,9 @@ const Workexp = () => {
     <>
       <div className="work" id="work">
         <div className="container work-exp">
-          <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
+          <h4 className="col-12 mt-3 mb-1 text-center">
             Work Experience
-          </h2>
+          </h4>
           <hr />
           <VerticalTimeline lineColor="#1e1e2c">
             <VerticalTimelineElement
@@ -24,12 +24,13 @@ const Workexp = () => {
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<SiTestinglibrary />}
             >
-              <h3 className="vertical-timeline-element-title">
-                Testing Engineer
-              </h3>
-              <h5 className="vertical-timeline-element-subtitle">
+              <h6 className="vertical-timeline-element-title" style={{fontWeight:"bold"
+    ,fontSize: "20px"}}>
+                System Engineer
+              </h6>
+              <p className="vertical-timeline-element-subtitle"style={{fontSize: "17px"}}>
                 Saint Gobain PVT LTD,Chennai
-              </h5>
+              </p>
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>

@@ -20,13 +20,38 @@
   
 
 }
-.about-content h1{
-    color:gray;
+.about h5{
+    color:rgb(62 177 197);
+    /* color:gray; */
     font-family:cursive;
-    border-bottom:2px solid gray;
+    /* border-bottom:2px solid gray; */
     text-align:center;
+    font-weight:bold;
+
+
 }
 
+.about h3{
+    margin-top: 11px;
+    text-align: center;
+    font-weight:bold;
+    font-family:cursive;
+    }
+
+
+    .about-header{
+        font-weight:700;
+        font-size:"30px";
+        font-family:cursive;
+
+    }
+
+    .about-details{
+        margin-right: 39px;
+    margin-left: -153px;
+    font-weight: bold;
+    color:black;
+    }
 /* Dark mode */
 
 #dark .about{

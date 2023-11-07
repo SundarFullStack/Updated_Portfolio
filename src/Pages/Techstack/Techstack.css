@@ -12,9 +12,10 @@
     color:#138781;
 }
 
-.techstack h2{
+.techstack h4{
     font-weight:bold;
-    color:#138781;
+    color:rgb(62 177 197);
+    font-family:cursive;
 }
 .techstack .card{
     cursor:pointer;
@@ -25,7 +26,7 @@
 }
 .techstack .card:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background-color:#138781;
+    background-color:rgb(62 177 197);
     color:white;
     transition:1s;
     border:none;

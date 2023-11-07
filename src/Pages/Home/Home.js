@@ -1,42 +1,28 @@
 import React from "react";
 import "./Home.css";
-import { useTheme } from "../../Context/ThemeContext";
 import Typewriter from "typewriter-effect";
-import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
-import Fade from "react-reveal/Fade";
-// import Resume from "../../assets/Docs/Resume.pdf";
+
 
 const Home = () => {
-  const [theme, setTheme] = useTheme();
 
-  const handleTheme = () => {
-    setTheme((previousState) => (previousState == "light" ? "dark" : "light"));
-  };
   return (
     <>
       <div className="home-container" id="home">
-        <div className="theme-btn" onClick={handleTheme}>
-          {theme === "light" ? (
-            <BsFillMoonStarsFill size={30} />
-          ) : (
-            <BsFillSunFill size={30} />
-          )}
-        </div>
 
         <div className="container home-content">
-          <Fade right>
-            <h2>Hi 👋 I'm a</h2>
-            <h1>
-              <Typewriter
-                options={{
-                  strings: ["FullStack Developer", "Mern Stack Developer"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </h1>
-          </Fade>
-          <Fade bottom>
+          
+          <h4>Hello, My Name is</h4>
+          <p><span style={{color:"rgb(62 177 197)"}}>Meenakshi</span> Sundar</p>
+          <h2 style={{color:"rgb(62 177 197)"}}><span style={{color:"white"}}>I'm a</span><Typewriter options={{strings:["Mern Stack Developer","Full Stack Developer"],
+          autoStart:true,
+            loop: true,
+          
+          }} />
+           
+            </h2>
+             
+     
+        
             <div className="home-buttons">
               <a
                 className="btn btn-hire"
@@ -54,7 +40,7 @@ const Home = () => {
                 My Resume
               </a>
             </div>
-          </Fade>
+          
         </div>
       </div>
     </>

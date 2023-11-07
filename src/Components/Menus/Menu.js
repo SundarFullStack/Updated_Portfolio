@@ -4,14 +4,11 @@ import { FcHome } from "react-icons/fc";
 import { FcAbout } from "react-icons/fc";
 import { FcPortraitMode } from "react-icons/fc";
 import { FcBiotech } from "react-icons/fc";
-import { FcReading } from "react-icons/fc";
 import { FcVideoProjector } from "react-icons/fc";
 import { FcVoicePresentation } from "react-icons/fc";
 import { FcBusinessContact } from "react-icons/fc";
 import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
 import Image from "../Images/meenakshisunder183017@gmail.com.jpg";
 
 const Menu = ({ toggle }) => {
@@ -19,12 +16,12 @@ const Menu = ({ toggle }) => {
     <>
       {toggle ? (
         <>
-          <Zoom>
+       
             <div className="navbar-profile-pic">
               <img src={Image} alt="profile-pic" />
             </div>
-          </Zoom>
-          <Fade left>
+        
+         
             <div className="nav-items">
               <div className="nav-item">
                 <div className="nav-link">
@@ -51,18 +48,7 @@ const Menu = ({ toggle }) => {
                     About
                   </Link>
                 </div>
-                <div className="nav-link">
-                  <Link
-                    to="education"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={100}
-                  >
-                    <FcReading />
-                    Education
-                  </Link>
-                </div>
+             
                 <div className="nav-link">
                   <Link
                     to="work"
@@ -118,7 +104,7 @@ const Menu = ({ toggle }) => {
                 </div>
               </div>
             </div>
-          </Fade>
+      
         </>
       ) : (
         <>
@@ -145,17 +131,7 @@ const Menu = ({ toggle }) => {
                 <FcAbout title="About" />
               </Link>
             </div>
-            <div className="nav-link">
-              <Link
-                to="education"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={100}
-              >
-                <FcReading title="Education" />
-              </Link>
-            </div>
+           
             <div className="nav-link">
               <Link
                 to="work"
